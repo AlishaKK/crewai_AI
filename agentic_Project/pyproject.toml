@@ -1,0 +1,25 @@
+[project]
+name = "myapp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AlishaKK", email = "nidakayani043@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chainlit>=2.4.1",
+    "crewai>=0.105.0",
+    "fastapi>=0.115.11",
+    "google-generativeai>=0.8.4",
+    "python-dotenv>=1.0.1",
+    "uvicorn>=0.34.0",
+]
+
+[project.scripts]
+myapp = "myapp:main"
+dev = "myapp.script:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
